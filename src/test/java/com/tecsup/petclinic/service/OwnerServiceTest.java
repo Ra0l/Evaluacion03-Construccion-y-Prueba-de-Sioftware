@@ -114,7 +114,7 @@ public class OwnerServiceTest {
 		
 		try {
 			Owner ownerCreatedFound = ownerService.findById(owner.getId());
-			logger.info("Owner id: "+ ownerCreatedFound.getId() + " owner created.");
+			logger.info(""+ ownerCreatedFound.getId());
 		}catch (OwnerNotFoundException e) {
 			logger.info("Owner no creado");
 		}
